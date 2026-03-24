@@ -1,0 +1,14 @@
+{
+  "buildCommand": "echo Built",
+  "outputDirectory": "frontend",
+  "functions": {
+    "api/feedback.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/feedback.js" },
+    { "src": "/(.*)", "dest": "/frontend/$1" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "feedback-app",
+  "version": "1.0.0",
+  "description": "Teacher Feedback App",
+  "scripts": {
+    "build": "echo Built"
+  },
+  "dependencies": {
+    "mongoose": "^7.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher Feedback</h1>
+        <p>Share your feedback about your teachers</p>
+    </header>
+
+    <div class="intro">
+        <h2>Welcome to Teacher Feedback Portal</h2>
+        <p>This portal allows students to share their feedback about their teachers and teaching methods. Your honest feedback helps us improve the quality of education.</p>
+        <p>Please fill out the form below to submit your feedback. Your opinions are valuable to us!</p>
+    </div>
+    
+    <div class="form-box">
+        <h2>Add Your Feedback</h2>
+        <form id="feedbackForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            
+            <label>Subject:</label>
+            <input type="text" id="subject" required>
+            
+            <label>Rating:</label>
+            <select id="rating" required>
+                <option>Choose rating</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
+            <label>Feedback:</label>
+            <textarea id="feedback" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    
+    <div class="feedback-box">
+        <h2>All Feedback</h2>
+        <div id="feedbackList"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Teacher Feedback. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
